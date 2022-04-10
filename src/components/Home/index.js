@@ -3,6 +3,7 @@ import './index.scss'
 import LogoTitle from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
+import Logo from './Logo'
 
 function Home() {
 
@@ -34,6 +35,7 @@ function Home() {
                     <h2>Frontend Developer / Code Expert /110 Tabs Opener</h2>
                     <Link to='/contact' className='flat-button'>CONTACT ME</Link>
                 </div>
+                <Logo />
             </div>
 
         </>
