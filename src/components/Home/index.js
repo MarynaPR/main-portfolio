@@ -4,6 +4,7 @@ import LogoTitle from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
+import Loader from 'react-loaders'
 
 function Home() {
 
@@ -16,6 +17,7 @@ function Home() {
             setLetterClass('text-animate-hover')
         }, 4000)
     }, [])
+
     return (
         <>
             <div className='container home-page'>
@@ -37,7 +39,7 @@ function Home() {
                 </div>
                 <Logo />
             </div>
-
+            <Loader type='pacman' />
         </>
 
     )
