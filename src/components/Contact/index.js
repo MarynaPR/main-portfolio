@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
+import L from "leaflet";
+
 import './index.scss'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
@@ -17,13 +19,9 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefaul()
-
         emailjs
             .sendForm(
-                'gmail',
-                // template custom from emailjs
-                'ttemplate_usyi2nw',
-                'form.current',
+                'gmail', 'ttemplate_usyi2nw', 'form.current',
                 // add my token from email-js
                 'My-token'
             ).then(
@@ -32,6 +30,14 @@ function Contact() {
                 }, () => {
                     alert('Failed to send the message, please try again.')
                 })
+    }
+
+    function setItem(_iconSize, _iconAnchor) {
+        return L.icon({
+            iconUrl: require('../../assets/images/leaf.png'),
+            iconSize: _iconSize,
+            iconAnchor: [35, 68], // point of the icon which will correspond to marker's location
+        })
     }
 
     return (
@@ -77,10 +83,11 @@ function Contact() {
                 <div className='map-wrap'>
                     <MapContainer
                         center={[43.073051, -89.401230]}
-                        zoom={4}>
+                        zoom={6}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                        <Marker
-                            position={[43.073051, -89.401230]}>
+                        <Marker position={[43.073051, -89.401230]}
+                            icon={setItem(80, [])}
+                        >
                             <Popup>Maryna lives here, come over for a cup of tea 🫖</Popup>
                         </Marker>
                     </MapContainer>
