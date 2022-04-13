@@ -13,11 +13,11 @@
     position: absolute;
     bottom: 0;
     left: 120px;
-    font-size: 18px;
+    font-size: 35px;
     font-family: "La Belle Aurore";
 }
-.bottom-tag-hrml {
-    margin-left: -20px;
+.bottom-tag-html {
+    margin-left: -40px;
 }
 .container {
     width: 100%;
@@ -45,7 +45,7 @@
         display: table-cell;
         max-height: 90%;
         h1 {
-            font-size: 53px;
+            font-size: 60px;
             font-family: 'Coolvetica';
             color: #ffd700;
             font-weight: 400;
@@ -57,7 +57,7 @@
                 content: '<h1>';
                 font-family: 'La Belle Aurore', cursive;
                 color: #ffd700;
-                font-size: 18px;
+                font-size: 35px;
                 position: absolute;
                 margin-top: -10px;
                 left: -10px;
@@ -68,8 +68,8 @@
             content: '<h1/>';
             font-family: 'La Belle Aurore', cursive;
             color: #ffd700;
-            font-size: 18px;
-            line-height: 18px;
+            font-size: 35px;
+            line-height: 8px;
             position: absolute;
             left: -30px;
             bottom: -20px;
@@ -78,7 +78,7 @@
         }
     }
     p {
-        font-size: 13px;
+        font-size: 15px;
         color: #fff;
         font-family: sans-serif;
         font-weight: 400;

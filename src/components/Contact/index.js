@@ -75,19 +75,17 @@ function Contact() {
                 </div>
                 {/* LOCATION */}
                 <div className='info-map'>
-                    Maryna Pryadka,<br />
-                    USA,<br />
-                    Madison, WI<br />
+                    current location:<br />
+                    Madison, WI<br /> USA<br />
+
                     <span>pryadkamaryna@gmail.com</span>
                 </div>
                 <div className='map-wrap'>
                     <MapContainer
                         center={[43.073051, -89.401230]}
-                        zoom={6}>
+                        zoom={4}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                        <Marker position={[43.073051, -89.401230]}
-                            icon={setItem(80, [])}
-                        >
+                        <Marker position={[43.073051, -89.401230]} icon={setItem(80, [])}>
                             <Popup>Maryna lives here, come over for a cup of tea 🫖</Popup>
                         </Marker>
                     </MapContainer>
