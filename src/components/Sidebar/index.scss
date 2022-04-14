@@ -8,7 +8,7 @@
     min-height: 500px;
 .logo {
     display: block;
-    padding: 10px 0;
+    padding: 15px 0;
 img {
     display: block;
     margin: 8px auto;
@@ -84,7 +84,7 @@ img {
   }
   ul {
       position: absolute;
-      bottom: 20px;
+      bottom: 50px;
       width: 100%;
       display: block;
       padding: 0;
@@ -97,11 +97,29 @@ img {
               display: block;
               font-size: 15px;
               line-height: 16px;
-
               &:hover svg {
                   color:#ffd700;
               }
           }
       }
+  }
+}
+/* ____________tablets__________ */
+@media screen and (max-width: 1024px){
+    .nav-bar {
+    width: 57px;
+    ul {
+     bottom: 80px; 
+    }
+  }
+}
+  /* ____________phones__________ */
+  @media screen and (max-width: 667px){
+    .nav-bar {
+        height: 112%;
+        width: 57px;      
+    ul{
+      bottom: 80px;
+    }
   }
 }

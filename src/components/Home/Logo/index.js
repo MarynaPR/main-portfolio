@@ -22,8 +22,8 @@ function Logo() {
                 drawSVG: "0%"
             },
                 { duration: 0.1, drawSVG: "10%", immediateRender: false }, "+=0.1")
-            .to(shapes.current, { duration: 1, drawSVG: "90% 100%", stagger: 0.5 })
-            .to(shapes.current, { duration: 1, rotation: 360, scale: 0.5, drawSVG: "100%", stroke: "white", strokeWidth: 6, transformOrigin: "50% 50%" })
+            // .to(shapes.current, { duration: 1, drawSVG: "90% 100%", stagger: 0.5 })
+            .to(shapes.current, { duration: 1, rotation: 360, scale: 0.5, drawSVG: "100%", strokeWidth: 6, transformOrigin: "50% 50%" })
         gsap.fromTo(
             shapes.current,
             {

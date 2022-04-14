@@ -44,13 +44,14 @@ function Contact() {
         <>
             <div className='container contact-page'>
                 <div className='text-zone'>
-                    <h1>
+                    <h1 className='h-element'>
                         <AnimatedLetters
                             letterClass={letterClass}
                             strArray={['c', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
                             idx={15} />
                     </h1>
-                    <p>I'd love to hear from you! Feel free to contact me using the form below.</p>
+                    <p className='p-element'>Got questions? Want to tell me something?</p>
+                    <p> I'd love to hear from you!</p>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail}>
                             <ul>

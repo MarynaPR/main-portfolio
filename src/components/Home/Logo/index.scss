@@ -31,3 +31,37 @@
     stroke: #ffd700;
     stroke-width: 10;
 }
+
+/* ____________tablets__________ */
+@media screen and (max-width: 1024px){
+    .logo-container {
+        width: 200px;
+        height: 400px;
+        position: static;
+        svg {
+            width: 70%;
+        }
+        .solid-logo {
+            margin: 20px;
+            width: 300pt;
+            height: 300pt;
+        }
+    }
+}
+  /* ____________phones__________ */
+  @media screen and (max-width: 600px){
+    .logo-container {
+        z-index: 0;
+        width: 100px;
+        height: 309px;
+        position: static;
+        svg {
+            width: 60%;
+        }
+        .solid-logo {
+            margin: 15px;
+            width: 150pt;
+            height: 150pt;
+        }
+    }
+  }
