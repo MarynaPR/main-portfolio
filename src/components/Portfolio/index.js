@@ -1,4 +1,4 @@
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
@@ -26,18 +26,20 @@ function Portfolio() {
             />
           </h1>
           <p>Welcome to my portfolio page!  </p>
-          <p>Click on the project to check out the code on Github and see the live demo</p>
-          <p>Feel free to contact me if you would like to have a similar creative project. </p>
+          <p>Click on the project for Github and live demo.</p>
         </div>
+
         {/* Projects */}
         <div className='portfolio-wrap'>
           <div className='portfolio-section'>
+            <div className='github'>
+              <FontAwesomeIcon icon={faGithub} />
 
-      
+            </div>
           </div>
-      
         </div>
       </div>
+
       < Loader type="pacman" />
     </>
   )
