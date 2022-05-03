@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
 import L from "leaflet";
 
 import './index.scss'
@@ -9,7 +9,8 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 function Contact() {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const refForm = useRef()
+    const form = useRef()
+    console.log("text2")
 
     useEffect(() => {
         return setTimeout(() => {
@@ -18,20 +19,20 @@ function Contact() {
     }, [])
 
     const sendEmail = (e) => {
-        e.preventDefaul()
-        emailjs
-            .sendForm(
-                'gmail', 'ttemplate_usyi2nw', 'form.current',
-                // add my token from email-js
-                'My-token'
-            ).then(
-                () => {
-                    alert('Message Successfully Sent!').window.location.reload(false)
-                }, () => {
-                    alert('Failed to send the message, please try again.')
-                })
-    }
+        e.preventDefaul();
 
+        emailjs.sendForm(
+            `${process.env.REACT_APP_YOUR_SERVICE_ID}`,
+            `${process.env.REACT_APP_YOUR_TEMPLATE_ID}`,
+            form.current,
+            `${process.env.REACT_APP_YOUR_USER_ID}`
+        )
+            .then((result) => {
+                console.log(result.text, "success");
+            }, (error) => {
+                console.log(error.text, "try again");
+            });
+    }
     function setItem(_iconSize, _iconAnchor) {
         return L.icon({
             iconUrl: require('../../assets/images/leaf.png'),
@@ -53,7 +54,10 @@ function Contact() {
                     <p className='p-element'>Got questions? Want to share something?</p>
                     <p> I'd love to hear from you!</p>
                     <div className='contact-form'>
-                        <form ref={refForm} onSubmit={sendEmail}>
+
+                        <form
+                            ref={form}
+                            onSubmit={sendEmail} >
                             <ul>
                                 <li className='half'>
                                     <input type='text' name='name' placeholder='name' required />
@@ -93,7 +97,9 @@ function Contact() {
                 </div>
             </div>
             <Loader type='pacman' />
+
         </>
+
     )
 }
 

@@ -1,35 +1,99 @@
-.portfolio-wrap {
+.portfolio-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
     position: absolute;
     background-color: #544c5e;
-    left: 38%;
-    z-index: 999999;
-    width: 90%;
-    padding: 20px 20px;
-    color: #fff;
+    padding: 7px;
+    left: 34%;
     font-family: 'Helvetica';
-    font-size: 17px;
-    // font-weight: 300;
     opacity: 0.7;
     animation: fadeIn 1s 1.5s;
-
     animation-fill-mode: forwards;
-    border-radius: 5px;
-    height: 100%;
-      .portfolio-section{
-          background-color: green; 
-          width: 48%;
-          margin-top: 10%;
-          padding: 35px 35px;
-          border-radius: 5px;
-           .github{ 
-            background-color: red;
-            width: 5%;
-            animation: backInRight 1s 1.2s;
-            animation-fill-mode: forwards;
-            border-radius: 5px;
+    // height: 90%;
+    z-index: 999999;
+    color: #fff;
+    top: -5%;
+}
+
+.img-portfolio {
+    display: block;
+    width: 100%;
+    height: 90%;
+    padding: 3px;
+    object-fit: cover;
+    // height: auto;
+}
+
+.portfolio-item {
+    background-color: #393340;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transition: 1s;
+    padding: 8px;
+
+    &:hover {
+        border-color: yellow;
+        background: transparent;
     }
 }
+
+.portfolio-item h3 {
+    color: white;
 }
 
+.portfolio-item-img {
+    overflow: hidden;
+}
 
-   
+.portfolio-item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: yellow;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid yellow;
+    transition: 1s;
+
+    &:hover {
+        background: white;
+        color: orange;
+        border-color: transparent;
+    }
+
+}
+
+.btn-primary {
+    background: pink;
+    color: purple;
+}
+
+/* ____________tablets__________ */
+@media screen and (max-width: 1024px) {
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        // grid-template-rows: max-content;
+    }
+
+    .portfolio-item {
+        // width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+/* ____________phones__________ */
+@media screen and (max-width: 600px) {
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        // grid-template-rows: max-content;
+    }
+}

@@ -32,6 +32,7 @@ function Home() {
                         <img src={LogoTitle} alt="developer" />
                         <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15} /> <br />
                         <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22} /> <br />
+
                     </h1>
                     <br />
                     <h2>Frontend Developer / Code Expert /110 Tabs Opener</h2>
