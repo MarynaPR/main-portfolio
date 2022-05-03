@@ -1,6 +1,6 @@
 import './index.scss'
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import Logo from '../../assets/images/m-yellow.png'
 import LogoSubtitle from '../../assets/images/globe-yellow.gif'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,18 +16,21 @@ const Sidebar = () => {
             </Link>
 
             <nav>
-                <NavLink exact="true" activeclassname="active" to='/'>
+                {/* <NavLink exact="true" activeclassname="active" to='/'>
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-                </NavLink>
-                <NavLink exact="true" activeclassname="active" className="about-link" to='/about'>
+                </NavLink> */}
+                <a href="/" exact="true" activeclassname="active" >
+                    <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+                </a>
+                <a exact="true" load="true" activeclassname="active" className="about-link" href="/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-                </NavLink>
-                <NavLink exact="true" activeclassname="active" className="contact-link" to='/contact'>
+                </a>
+                <a exact="true" activeclassname="active" className="contact-link" href="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-                </NavLink>
-                <NavLink exact="true" activeclassname="active" className="portfolio-link" to='/portfolio'>
+                </a>
+                <a exact="true" activeclassname="active" className="portfolio-link" href="/portfolio">
                     <FontAwesomeIcon icon={faCamera} color="#4d4d4e" />
-                </NavLink>
+                </a>
             </nav>
             <ul>
                 <li><a target='_blank'
