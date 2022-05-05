@@ -3,8 +3,10 @@ import './index.scss'
 import LogoTitle from '../../assets/images/m-yellow.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
-// import Loader from 'react-loaders'
+// import Logo from './Logo'
+import Loader from 'react-loaders'
+import Typical from 'react-typical'
+
 
 function Home() {
 
@@ -35,12 +37,24 @@ function Home() {
 
                     </h1>
                     <br />
-                    <h2>Frontend Developer / Code Expert /110 Tabs Opener</h2>
+                    <h2>
+                        {/* Frontend Developer / Code Expert /110 Tabs Opener */}
+                        <Typical
+                            loop={Infinity}
+                            wrapper="p"
+                            steps={[
+                                'Enthusiastic Coder 💻',
+                                3000,
+                                'Ardent Learner 🌍',
+                                2000,
+                                "110 Tabs Opener", 3000
+                            ]} />
+                    </h2>
                     <Link to='/contact' className='flat-button'>CONTACT ME</Link>
                 </div>
-                <Logo />
+                {/* <Logo /> */}
             </div>
-            {/* <Loader type='pacman' /> */}
+            <Loader type='pacman' />
         </>
 
     )

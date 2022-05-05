@@ -47,13 +47,13 @@ const data = [
     github: 'https://github.com/SMKrizan/WoodlandConsultingLLC',
     demo: 'https://woodland-consulting.herokuapp.com/'
   },
-  {
-    id: 6,
-    image: chains,
-    title: "24chains gisc gold app",
-    github: 'https://github.com/MarynaPR/24-chains',
-    demo: 'https://dry-mesa-09626.herokuapp.com/login'
-  },
+  // {
+  //   id: 6,
+  //   image: chains,
+  //   title: "24chains gisc gold app",
+  //   github: 'https://github.com/MarynaPR/24-chains',
+  //   demo: 'https://dry-mesa-09626.herokuapp.com/login'
+  // },
 ]
 
 function Portfolio() {
@@ -76,8 +76,8 @@ function Portfolio() {
               idx={15}
             />
           </h1>
-          <p>Welcome to my portfolio page!  </p>
-          <p>Click on the project for Github and live demo.</p>
+          <h2>Welcome to my portfolio page!  </h2>
+          <h2>Click on the project for Github and live demo.</h2>
         </div>
 
         {/* Projects */}

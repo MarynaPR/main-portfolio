@@ -51,8 +51,8 @@ function Contact() {
                             strArray={['c', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
                             idx={15} />
                     </h1>
-                    <p className='p-element'>Got questions? Want to share something?</p>
-                    <p> I'd love to hear from you!</p>
+                    <h2 className='p-element'>Got questions? Want to share something? I'd love to hear from you!</h2>
+                  <br/>
                     <div className='contact-form'>
 
                         <form
@@ -91,7 +91,8 @@ function Contact() {
                         zoom={4}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                         <Marker position={[43.073051, -89.401230]} icon={setItem(80, [])}>
-                            <Popup>Maryna lives here, come over for a cup of tea 🫖</Popup>
+                            <Popup
+                            >Maryna lives here, come over for a cup of tea 🫖</Popup>
                         </Marker>
                     </MapContainer>
                 </div>

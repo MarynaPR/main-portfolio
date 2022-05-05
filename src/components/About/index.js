@@ -26,9 +26,12 @@ function About() {
               idx={15}
             />
           </h1>
-          <p>I am enthusiastic full-stack web developer looking for a role in established IT company with the opportunity to work with the latest technologies on challenging and diverse projects. </p>
-          <p>I am naturally curious and continuously working on improving my skills one design problem at a time.</p>
-          <p>Unconventional maker of positive changes and advocate for kindness - in coding bootcamp awarded "most likely to prevent others from throwing their laptop out a window'. </p>
+          <h2>I am enthusiastic full-stack web developer looking for a role in established IT company with the opportunity to work with the latest technologies on challenging and diverse projects.
+          </h2>
+          <h2>
+            I am naturally curious and continuously working on improving my skills one design problem at a time.
+          </h2>
+          <h2>Unconventional maker of positive changes and advocate for kindness - in coding bootcamp awarded "most likely to prevent others from throwing their laptop out a window'. </h2>
         </div>
         {/* CUBE */}
         <div className='stage-cube-cont'>

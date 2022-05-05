@@ -2,7 +2,7 @@ import './index.scss'
 import React from 'react'
 import { Link} from 'react-router-dom'
 import Logo from '../../assets/images/m-yellow.png'
-import LogoSubtitle from '../../assets/images/globe-yellow.gif'
+// import LogoSubtitle from '../../assets/images/globe-yellow.gif'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser, faCamera } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -12,7 +12,7 @@ const Sidebar = () => {
         <div className='nav-bar'>
             <Link className='logo' to='/'>
                 <img src={Logo} alt="logo" />
-                <img className="logo-subtitle" src={LogoSubtitle} alt="logo-subtitle" />
+                {/* <img className="logo-subtitle" src={LogoSubtitle} alt="logo-subtitle" /> */}
             </Link>
 
             <nav>
