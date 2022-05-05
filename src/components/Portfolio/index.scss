@@ -1,8 +1,8 @@
 .portfolio-container {
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
+
     background: #4d4d4e;
     float: right;
     width: 48%;
@@ -15,7 +15,7 @@
     display: block;
     width: 100%;
     height: 90%;
-    padding: 3px;
+    padding: 1px;
     object-fit: cover;
     // height: auto;
 }
@@ -34,7 +34,12 @@
 }
 
 .portfolio-item h3 {
-    color: white;
+    // color: white;
+    color: #d9d4d4;
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .portfolio-item-img {
@@ -48,34 +53,101 @@
 }
 
 .btn {
-    width: max-content;
-    display: inline-block;
-    color: yellow;
-    padding: 0.75rem 1.2rem;
+    // color: transparent;
+    padding: 0.85rem 1.5rem;
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid yellow;
     transition: 1s;
+    font-size: 27px;
+    color: #4d4d4e;
+    // display: block;
+    line-height: 30px;
+    height: 30px;
+    // position: relative;
+    // text-decoration: none;
 
     &:hover {
-        background: white;
-        color: orange;
-        border-color: transparent;
+        background: #ffd700;
+        color: #242425;
+        // border-color: transparent;
+
+        &:after {
+            opacity: 1;
+        }
     }
 
+    &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transform: all 0.3s ease-out;
+    }
+
+    &:first-child {
+        &:after {
+            content: 'GITHUB';
+        }
+    }
 }
 
 .btn-primary {
     background: rgb(112, 109, 109);
     color: #242425;
+
+    &:hover {
+        background: #ffd700;
+        color: #242425;
+
+        &:after {
+            opacity: 0;
+        }
+    }
+
+    &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transform: all 0.3s ease-out;
+    }
+
+    &:first-child {
+        &:after {
+            content: 'LIVE';
+        }
+    }
 }
 
 /* ____________tablets__________ */
 @media screen and (max-width: 1024px) {
+    // html {
+    //     box-sizing: border-box;
+    // }
+
     .portfolio-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
+
+        display: grid;
+        align-items: center;
+        grid-auto-flow: row;
+        grid-auto-rows: 90%;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+        grid-gap: 0.5%;
+        overflow: scroll;
+        margin: 0;
+        margin-bottom: 5px;
     }
 
     .portfolio-item {
@@ -85,9 +157,32 @@
 
 /* ____________phones__________ */
 @media screen and (max-width: 600px) {
+    html {
+        box-sizing: border-box;
+        padding: none;
+    }
+
     .portfolio-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
+        display: grid;
+        align-items: center;
+        grid-auto-flow: row;
+        grid-auto-rows: 49%;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+        overflow: scroll;
+        grid-gap: none;
+        padding: none;
+        margin: none;
+        width: 80%;
+        float: right;
+
+    }
+
+    .portfolio-item {
+        margin: none;
+    }
+
+    .container.portfolio-page .text-zone {
+        display: none;
     }
 }

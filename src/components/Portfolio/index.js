@@ -29,14 +29,14 @@ const data = [
   {
     id: 3,
     image: handyman,
-    title: "website for a handyman services",
+    title: "handyman app",
     github: 'https://github.com/MarynaPR/Handyman',
     demo: 'https://call1800anatolii.netlify.app'
   },
   {
     id: 4,
     image: tmax,
-    title: "scrabble word generator with 2-3 words",
+    title: "scrabble word generator app",
     github: 'https://github.com/MarynaPR/Tally-Max',
     demo: 'https://jgrossh2.github.io/Tally-Max/'
   },
@@ -68,7 +68,7 @@ function Portfolio() {
   return (
     <>
       <div className='container portfolio-page'>
-        <div className='text-zone'>
+        <div className='text-zone portfolio'>
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -76,15 +76,13 @@ function Portfolio() {
               idx={15}
             />
           </h1>
-          <h2>Welcome to my portfolio page!  </h2>
-          <h2>Click on the project for Github and live demo.</h2>
+          <br/>
+          <h2>Welcome to my portfolio page! </h2>
+          <h2>Check out more details on Github. </h2>
         </div>
 
         {/* Projects */}
-
         <div className='portfolio-container'>
-          {/* <div className='portfolio-section'> */}
-
           {
             data.map(({ id, image, title, github, demo }) => {
               return (
@@ -107,10 +105,7 @@ function Portfolio() {
             })
 
           }
-
-          {/* </div> */}
         </div>
-
       </div>
       < Loader type="pacman" />
     </>
