@@ -3,10 +3,8 @@
 
 This code features my portfolio using React. 
 
-The project is deployed to [GitHub]()
+The project is deployed to [Velcel](https://portfoliomp-a0dw6aw0v-marynapr.vercel.app/)
 
-#### Screenshots :camera_flash:
-![screenshot](./src/images/screenshot.png)
 
 #### Technology Used :label: 
 
@@ -21,22 +19,20 @@ The project is deployed to [GitHub]()
 #### Installation :electric_plug:
 `npx create-react app <app-name>`
 - FONTS
-`npm i --save @fortawesome/free-brands-svg-icons`
-`npm i --save @fortawesome/free-solid-svg-icons`
-`npm i @fortawesome/react-fontawesome`
+* `npm i --save @fortawesome/free-brands-svg-icons`
+* `npm i --save @fortawesome/free-solid-svg-icons`
+* `npm i @fortawesome/react-fontawesome`
 -ANIMATIONS:
-`npm install animate.css --save`
-`npm install gsap@npm:gsap-trial`
-`npm i loaders.css`
-`npm i react-leaflet`
-`npm install --save react-loaders loaders.css`
-`npm i react-router-dom`
+* `npm install animate.css --save`
+* `npm i react-typical`
+* `npm i loaders.css`
+* `npm i react-leaflet`
+* `npm install --save react-loaders loaders.css`
+* `npm i react-router-dom`
 -STYLE:
-`npm i sass`
-`npm i @emailjs/browser`
+* `npm i sass`
+* `npm i @emailjs/browser`
 
-`npm install`
-`npm start`
 
 #### Contribution :heavy_plus_sign: 
 
