@@ -26,7 +26,7 @@ function About() {
               idx={15}
             />
           </h1>
-          <h2>I am enthusiastic full-stack web developer looking for a role in established IT company with the opportunity to work with the latest technologies on challenging and diverse projects.
+          <h2>I am enthusiastic full-stack web developer looking to work with the latest technologies on challenging and diverse projects.
           </h2>
           <h2>
             I am naturally curious and continuously working on improving my skills one design problem at a time.
