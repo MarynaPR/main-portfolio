@@ -22,14 +22,14 @@ The project is deployed to [Velcel](https://portfoliomp-a0dw6aw0v-marynapr.verce
 * `npm i --save @fortawesome/free-brands-svg-icons`
 * `npm i --save @fortawesome/free-solid-svg-icons`
 * `npm i @fortawesome/react-fontawesome`
--ANIMATIONS:
+- ANIMATIONS:
 * `npm install animate.css --save`
 * `npm i react-typical`
 * `npm i loaders.css`
 * `npm i react-leaflet`
 * `npm install --save react-loaders loaders.css`
 * `npm i react-router-dom`
--STYLE:
+- STYLE:
 * `npm i sass`
 * `npm i @emailjs/browser`
 
